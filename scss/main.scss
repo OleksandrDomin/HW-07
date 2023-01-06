@@ -1,7 +1,3 @@
-# goit-markup-hw-07
-
-
-
 :root {
     --body-background-color: #F5F5F5;
     ;
@@ -22,8 +18,8 @@
     --bgc-works: rgba(47, 48, 58, 0.8);
     --bgc-cards-overlay: rgba(33, 150, 243, 0.9);
     --bgc-backdrop: rgba(0, 0, 0, 0.2);
-    --border-color-form-modal:rgba(33, 33, 33, 0.2);
-    --text-color-form-textarea:rgba(117, 117, 117, 0.5);
+    --border-color-form-modal: rgba(33, 33, 33, 0.2);
+    --text-color-form-textarea: rgba(117, 117, 117, 0.5);
 
     --transition-duration: 250ms;
     --t-timing-f: cubic-bezier(0.4, 0, 0.2, 1);
@@ -209,9 +205,8 @@ li {
 
 .link-info:hover,
 .link-info:active,
-.link-info:focus 
-{
-color: var(--hover-color);
+.link-info:focus {
+    color: var(--hover-color);
 }
 
 
@@ -306,8 +301,7 @@ color: var(--hover-color);
 }
 
 .footer-icon-title,
-.footer-subscribe-title
-{
+.footer-subscribe-title {
     margin-bottom: 20px;
 
     font-family: 'Roboto';
@@ -382,8 +376,8 @@ color: var(--hover-color);
     border-radius: 4px;
 
     color: rgba(255, 255, 255, 0.6);
-    
-  
+
+
 }
 
 
@@ -932,7 +926,7 @@ color: var(--hover-color);
     opacity: 1;
 
     transition: opacity var(--transition-duration) var(--t-timing-f),
-    visibility var(--transition-duration) var(--t-timing-f);
+        visibility var(--transition-duration) var(--t-timing-f);
 }
 
 .backdrop.is-hidden {
@@ -962,9 +956,8 @@ color: var(--hover-color);
 
 }
 
-.backdrop.is-hidden .modal 
-{
-transform: translate(-50%, -50%) scale(0.6);
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.6);
 }
 
 .modal-close {
@@ -984,51 +977,46 @@ transform: translate(-50%, -50%) scale(0.6);
 
     background-color: inherit;
     border: 1px solid rgba(0, 0, 0, 0.1);
-   transition: fill var(--transition-duration) var(--t-timing-f);
+    transition: fill var(--transition-duration) var(--t-timing-f);
 }
 
 .modal-close:hover,
 .modal-close:focus,
-.modal-close:active
-{
+.modal-close:active {
     fill: var(--hover-color);
 }
 
-.modal-title
-{
+.modal-title {
     display: block;
     margin-bottom: 12px;
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--text-title-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-title-color);
 }
 
-.modal-label
-{
+.modal-label {
     display: block;
     margin-bottom: 4px;
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-        color: var(--text-articl-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-articl-color);
 }
 
-.user-form-box
-{
+.user-form-box {
     position: relative;
     margin-bottom: 10px;
 }
 
-.user-form-input
-{
+.user-form-input {
     width: 100%;
     height: 40px;
     padding: 0 15px 0 42px;
@@ -1044,32 +1032,27 @@ transform: translate(-50%, -50%) scale(0.6);
 
 .user-form-input:focus,
 .user-form-input:hover,
-.user-form-input:active
-
-{
-border-color: var(--hover-color);
+.user-form-input:active {
+    border-color: var(--hover-color);
 }
 
-.user-form-input:hover + .user-form-icon,
-.user-form-input:focus + .user-form-icon,
-.user-form-input:active + .user-form-icon
-{
+.user-form-input:hover+.user-form-icon,
+.user-form-input:focus+.user-form-icon,
+.user-form-input:active+.user-form-icon {
     fill: var(--hover-color);
 }
 
-.user-form-icon
-{
-position: absolute;
-top: 50%;
-left: 15px;
-transform: translateY(-50%);
-transition-property: fill;
-transition-duration: var(--transition-duration);
-transition-timing-function: var(--t-timing-f);
+.user-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition-property: fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--t-timing-f);
 }
 
-.user-form-textarea
-{
+.user-form-textarea {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -1088,25 +1071,22 @@ transition-timing-function: var(--t-timing-f);
 
 .user-form-textarea:hover,
 .user-form-textarea:focus,
-.user-form-textarea:active
-{
+.user-form-textarea:active {
     border-color: var(--hover-color);
 }
 
-.user-form-textarea::placeholder
-{
+.user-form-textarea::placeholder {
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-        color: var(--text-color-form-textarea);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color-form-textarea);
 }
 
 
-.term-checkbox-labl
-{
+.term-checkbox-labl {
     position: relative;
     display: block;
     text-align: center;
@@ -1115,30 +1095,28 @@ transition-timing-function: var(--t-timing-f);
     margin-bottom: 30px;
 
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-    
-        color: var(--text-articl-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--text-articl-color);
 }
 
-.checkbox
-{
+.checkbox {
     appearance: none;
 }
-.checkbox:focus ~.term-checkbox-icon,
-.checkbox:active ~.term-checkbox-icon,
-.checkbox:hover ~.term-checkbox-icon
-{
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
- 
-        border: 2px solid #212121;
+
+.checkbox:focus~.term-checkbox-icon,
+.checkbox:active~.term-checkbox-icon,
+.checkbox:hover~.term-checkbox-icon {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    border: 2px solid #212121;
 }
 
-.checkbox:checked ~ .term-checkbox-icon
-{
+.checkbox:checked~.term-checkbox-icon {
     background-color: var(--hover-color);
     background-origin: border-box;
     border-color: var(--hover-color);
@@ -1146,8 +1124,7 @@ transition-timing-function: var(--t-timing-f);
 
 }
 
-.term-checkbox-link
-{
+.term-checkbox-link {
     color: var(--hover-color);
     text-decoration-skip-ink: none;
     transition: color var(--transition-duration) var(--t-timing-f);
@@ -1155,36 +1132,33 @@ transition-timing-function: var(--t-timing-f);
 
 .term-checkbox-link:hover,
 .term-checkbox-link:focus,
-.term-checkbox-link:active
-{
+.term-checkbox-link:active {
     color: var(--btn-hover-color);
 }
 
-.term-checkbox-icon
-{
-position: absolute;
-top: 50%;
-left: 13px;
+.term-checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 13px;
 
-transform: translateY(-50%);
-width: 16px;
-height: 15px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
 
 
-background: var(--white-cololr);
+    background: var(--white-cololr);
     border-radius: 2px;
     border: 1.5px solid #212121;
     fill: var(--white-cololr);
 
     transition: background var(--transition-duration) var(--t-timing-f),
-    border-radius var(--transition-duration) var(--t-timing-f),
-    border var(--transition-duration) var(--t-timing-f),
-    fill var(--transition-duration) var(--t-timing-f);
+        border-radius var(--transition-duration) var(--t-timing-f),
+        border var(--transition-duration) var(--t-timing-f),
+        fill var(--transition-duration) var(--t-timing-f);
 }
 
 
-.modal-submit
-{
+.modal-submit {
     display: block;
     width: 200px;
     height: 50px;
@@ -1192,27 +1166,26 @@ background: var(--white-cololr);
     padding: 0%;
 
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
- 
-        text-align: center;
-        letter-spacing: 0.06em;
-        cursor: pointer;
-    
-        color: var(--white-cololr);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
 
-        background: var(--hover-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        border: none;
-        transition: background-color var(--transition-duration) var(--t-timing-f);
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    color: var(--white-cololr);
+
+    background: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color var(--transition-duration) var(--t-timing-f);
 }
 
 .modal-submit:hover,
 .modal-submit:focus,
-.modal-submit:active
-{
-background-color: var(--btn-hover-color);
+.modal-submit:active {
+    background-color: var(--btn-hover-color);
 }
