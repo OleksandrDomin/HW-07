@@ -1,0 +1,41 @@
+.benefits {
+    list-style-type: none;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.benefits__list {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+}
+
+.benefits__item {
+    flex-basis: 270px;
+}
+
+.benefits__icon {
+    @include flex-centr;
+    flex-direction: column;
+    height: 120px;
+    background-color: var(--team-section-color);
+    margin-bottom: 30px;
+}
+
+.benefits__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--text-title-color);
+    letter-spacing: 0.03em;
+}
+
+.benefits__texts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-articl-color);
+    letter-spacing: 0.03em;
+}

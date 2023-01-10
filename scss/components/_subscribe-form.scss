@@ -1,0 +1,27 @@
+.subscribe-form 
+{
+    display: flex;
+}
+
+.subscribe-form__area 
+{
+    width: 358px;
+    height: auto;
+    background-color: inherit;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form__button 
+{
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+}
