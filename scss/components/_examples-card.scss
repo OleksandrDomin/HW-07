@@ -12,7 +12,7 @@
 
     &:hover,
     &:focus,
-    &:active 
+    &:active,
     {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -77,14 +77,21 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--t-timing-f);
 
-
-        .examples-card:hover & 
+        .examples-card:hover &, 
+        .examples-card:active &,
+        .examples-card:focus &
         {
         transform: translateY(0);
         opacity: 1;
         }
 
+        .examples-card__link:hover &,
+        .examples-card__link:active &,
+        .examples-card__link:focus & 
+        {
+        transform: translateY(0);
+        opacity: 1;
+        }
 }
-
 
 

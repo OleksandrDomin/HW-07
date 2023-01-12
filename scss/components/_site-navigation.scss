@@ -1,3 +1,9 @@
+.nav__list {
+    display: flex;
+    padding-left: 0;
+    gap: 50px;
+}
+
 .nav__link {
     position: relative;
     display: block;

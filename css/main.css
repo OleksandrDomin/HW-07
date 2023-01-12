@@ -4,7 +4,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff");
+  src: local("Roboto"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-500 - latin_cyrillic */
@@ -12,7 +12,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff");
+  src: local("Roboto"), url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700 - latin_cyrillic */
@@ -20,7 +20,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff");
+  src: local("Roboto"), url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-900 - latin_cyrillic */
@@ -28,38 +28,24 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff");
+  src: local("Roboto"), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* raleway-regular - latin_cyrillic */
+/* raleway-regular - latin */
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/raleway-v28-latin_cyrillic-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/raleway-v28-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v28-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/raleway-v28-latin_cyrillic-regular.woff") format("woff"), url("../fonts/raleway-v28-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/raleway-v28-latin_cyrillic-regular.svg#Raleway") format("svg");
-  /* Legacy iOS */
+  src: local(""), url("../fonts/raleway-v28-latin-regular.woff2") format("woff2"), url("../fonts/raleway-v28-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* raleway-700 - latin_cyrillic */
+/* raleway-700 - latin */
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/raleway-v28-latin_cyrillic-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/raleway-v28-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v28-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v28-latin_cyrillic-700.woff") format("woff"), url("../fonts/raleway-v28-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/raleway-v28-latin_cyrillic-700.svg#Raleway") format("svg");
-  /* Legacy iOS */
-}
-/* raleway-900 - latin_cyrillic */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/raleway-v28-latin_cyrillic-900.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/raleway-v28-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v28-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/raleway-v28-latin_cyrillic-900.woff") format("woff"), url("../fonts/raleway-v28-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/raleway-v28-latin_cyrillic-900.svg#Raleway") format("svg");
-  /* Legacy iOS */
+  src: local(""), url("../fonts/raleway-v28-latin-700.woff2") format("woff2"), url("../fonts/raleway-v28-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 :root {
   --body-background-color: #F5F5F5;
@@ -171,7 +157,7 @@ img {
 /*Mixins*/
 /*Body*/
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--text-title-color);
 }
 
@@ -190,13 +176,8 @@ body {
 }
 
 .header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  gap: 50px;
 }
 
 .header__info {
@@ -204,9 +185,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+  padding: 0;
   margin: 0;
   margin-left: auto;
-  padding: 0;
 }
 
 /*Hero*/
@@ -500,7 +481,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  font-family: "Roboto";
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -705,14 +686,13 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 9px;
+  /*display: flex;
+  flex-direction: column;
+  gap: 9px;*/
+}
+
+.address__item {
+  margin-bottom: 9px;
 }
 
 .address-map {
@@ -877,7 +857,12 @@ body {
   -webkit-transition-timing-function: var(--t-timing-f);
           transition-timing-function: var(--t-timing-f);
 }
-.examples-card:hover .examples-card__overlay {
+.examples-card:hover .examples-card__overlay, .examples-card:active .examples-card__overlay, .examples-card:focus .examples-card__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+.examples-card__link:hover .examples-card__overlay, .examples-card__link:active .examples-card__overlay, .examples-card__link:focus .examples-card__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -1179,6 +1164,14 @@ body {
 }
 
 /*Site-Navigation*/
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  gap: 50px;
+}
+
 .nav__link {
   position: relative;
   display: block;
